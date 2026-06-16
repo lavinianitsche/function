@@ -1,8 +1,18 @@
-function soma() {
+// function soma(a, b, c) {
+//     console.log(a + b + c);
 
-    
+// }
 
-    return a + b;
+// soma(3, 4, 1)
+
+
+function soma(...termos) {
+    let result = 0;
+
+    for (let i = 0; i < termos.length; i++) {
+        result += termos[i];
+        
+    }
+
+    return result;
 }
-
-console.log(soma());
